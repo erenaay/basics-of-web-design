@@ -1,97 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
 
-<html>
-    <head>
-        <meta charset="utf-8" />
-        <title>İş Başvuru Formu</title>
-    </head>
-       <body>
-        <table border="1" width="1000" align="center" ></table>
-           <center>
-        <form action="" method="get">
-                
-              <br />  Kimlik Numarası: <br/>
-               <td> <input type="text" name="kimlik numarası" />
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kars</title>
+    <style>
+        html,
+        body {
+            height: 100%;
+            margin: 0;
 
-                <br />
+        }
+        body{
+        background-image: url(img/yakamoz-duz-renk.png);
+        }
 
-              <br />  Adınız:<br />
-                <input type="text" name="adınız" />
+        #ustAlan {
+            background-image: url(img/36-KARS.png);
+            background-repeat: round;
+            height: 30%;
+            width: 80%;
+            margin: auto;
+        }
 
-                <br />
+        #kat_1 {
+            height: 100%;
+            width: 80%;
+            margin: auto;
+        }
 
-              <br />   Soyadınız :<br />
-                <input type="text" name="soyadınız" />
-                <br />
+        #menu {
+            width: 20%;
+            float: left;
+            height: 100%;
 
-              <br />  Doğum Tarihi:<br />
-                <input type="date" name="tarih" />
-                   <br />
-                </tr>
-                
-               <br /> Cinsiyet: <br />
-                <input type="radio" name="cinsiyet" value="e" /> Erkek<br />
-                <input type="radio" name="cinsiyet" value="k" /> Kadın<br />
+        }
 
-                <br />
+        #icerikAlani {
+            width: 100%;
+            height: 100%;
+            background-color: aliceblue;
+        }
 
-            
-               <br /> Uyruk: <br />
-                <input type="radio" name="uyruk" value="t" /> Türk Vatandaşı<br />
-                <input type="radio" name="uyruk" value="y" /> Yabancı<br />
-                 Belirtiniz: <br /> 
-                <input type="text" name="ulke" />
+        #icerikAlani img {
+            width: 50%;
+            margin: auto;
+            display: block;
+            position: relative;
+            padding: 10px;
+        }
 
-                <br /> 
+        #iccerikAlani p {
+            width: 60%;
+            position: relative;
+            margin: auto;
+        }
 
+        #altAlan {
+            height: 10%;
+            background-color: beige;
+            width: 80%;
+            margin: auto;
+            text-align: center;
+        }
 
-              <br />  Adres :<br />
-                <textarea name="adres" cols="40" rows="5"></textarea> 
+        #altALan p {
+            line-height: 55px;
+        }
+    </style>
+</head>
 
-                <br />
+<body>
+    <div id="ustAlan"></div>
+    <div id="kat_1">
+        <div id="menu">
+            <center>
+                <a href="index.html" title="Anasayfa"><img src="img/anasayfa-gri.png"></a>
+                <a href="hakkimizda.html" title="Hakkımızda"><img src="img/hakkimizda-beyaz.png"></a>
+                <a href="galeri.html" title="Galeri"><img src="img/galeri-beyaz.png"> </a>
+                <a href="iceriklerimiz.html"title="İçeriklirimiz"><img src="img/iceriklerimiz.png"> </a>
+                <a href="iletisim.html" title="İletişim"><img src="img/iletisim-beyaz.png"> </a>
+            </center>
+        </div>
+        <div id="icerikAlani">
+            <img src="img/WhatsApp Image 2022-10-23 at 12.32.33.jpeg">
+            <p>
 
+                Anadolu'nun en doğusunda, Doğu Anadolu Bölgesi'nde yer alan Kars M.Ö. 9000-8000 yıllarına, Cilalı Taş
+                Devri’ne, dayanan bir tarihe sahiptir.Yontma Taş Devri'nden itibaren aralıksız olarak yerleşim alanı olan Kars, çok sayıda kültürel ve tarihi yapıyı bünyesinde barındırır. Kars yüzyıllar öncesinden gelen tarihi kalıntılarının yanı sıra kış turizmiyle de ön plana çıkar.
 
-              <br />  İletişim:<br />
-                <input type="phone number" name="iletisim" />
-
-                <br />
-
-
-               <br /> Mail adresiniz:<br />
-                <input type="email" name="mail" />
-
-                <br />
-
-              <br />  Şehir:<br />
-                
-                   <select name="sehir">
-                 <option value="1">Adana</option>
-                 <option value="10">Balıkesir</option>
-                 <option value="17">Çanakkale</option>
-                 <option value="26">Eskişehir</option>
-                 <option value="43">Kütahya</option>
-                 <option value="68">Aksaray</option>
-                   </select> 
-                   
-                   <br />
-
-              <br />  Referanslarınız:<br/>
-                <textarea name="referans" cols="40" rows="5"></textarea>
-                <br />
-            
-              <br />  Okuduğu Okullar:<br />
-                <textarea name="okul" cols="40" rows="5"></textarea>
-                <br/>
-              
-             <br /> Yabancı Dil: <br />
-            <input type="radio" name="dil" value="var" /> Var <br />
-            <input type="radio" name="dil" value="yok" /> Yok<br />
-            Var İse Belirtiniz: <br /> 
-            <input type="text" name="dil" />
-               
-            <br />
+                Orta Çağ'dan kalma Ani Antik Kenti, tarihi İpek Yolu üzerinde, kent merkezinden 42 km mesafede ve kentin güneyinde bulunmaktadır. Çok sayıda kültürel ve tarihi yapının bulunduğu antik kent, Kars'ın en çok ziyaret edilen yerlerindendir.
+            </p>
 
 
-    
-               
-                </form>
-       </center>
+        </div>
+    </div>
+    <div id="altAlan">
+        <p>  Tüm Hakları Saklıdır </p>
+    </div>
+</body>
+
+</html>
